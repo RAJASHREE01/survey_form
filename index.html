@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <h1>
+            <title id='title'>
+                Survey Form
+            </title>
+        </h1>
+    </head>
+    <body>
+        <div class='layer'>     
+            <p id='description'>
+                <div class='heading'>
+                    Freelance survey form
+                </div>
+                <div class='full_desc'>
+                    This form is to provide us with feedback to improve our platform
+                </div>
+            </p>
+            <form id='survey-form'>
+                <div id='name-form'>
+                    <div>
+                        <label id='name-label' for='name'>Name</label>
+                    </div>
+                    <div>
+                        <input id='name' name='name'type='text'placeholder='Enter Your Name'required>
+                    </div> 
+                </div>
+                <div id='email-form'>
+                    <div>
+                        <label id='email-label' for='email'>Email</label>
+                    </div>
+                    <div>
+                        <input id='email' name='email' type='email'placeholder="Enter Your Email" pattern='[A-Za-z]+@[A-Za-z]+.[A-Za-z]'required>
+                    </div>
+                </div>
+                <div id='age-form'>
+                    <div>
+                        <label id='number-label' for='number'>Age</label>
+                    </div>
+                    <div>
+                        <input id='number' type='number'name='age'placeholder='Age'min='5' max='100'>
+                    </div>
+                </div>
+                <div id='drop-down'>
+                    <div>
+                        <label for='dropdown'>How will you describe yourself?</label>
+                    </div>
+                    <div>
+                        <select id='dropdown' name='role'required>
+                            <option disabled selected value>Select current role</option>
+                            <option value='student'>Student</option>
+                            <option value='part time job'>Part time job</option>
+                            <option value='professional'>Professional</option>
+                            <option value='other'>Other</option>
+                        </select>
+                    </div>
+                </div>     
+                <div id='radio'>
+                    <div>
+                        <p>Has our platfrom satisfied your requirements?</p>
+                    </div>
+                    <div>
+                        <div><input name='satisfied' type='radio' value='definitely'>Definitely</div>
+                        <div><input name='satisfied' type='radio' value='maybe'>Maybe</div>
+                        <div><input name='satisfied' type='radio' value='no'>Not at all</div>
+                    </div>
+                </div>
+                <div id='checkbox'>
+                    <p>What projects do you work on?</p> 
+                    <div>
+                        <div><input name='projects'type='checkbox'value='front-end'>Front-end </div>
+                        <div><input name='projects'type='checkbox' value='back-end'>Back-end </div>
+                        <div><input name='projects'type='checkbox' value='full-stack'>Full stack </div>
+                        <div><input name='projects'type='checkbox'value='game'>Game development </div>
+                        <div><input name='projects'type='checkbox'value='troubleshoot'>troubleshoot </div>
+                    </div>
+                </div>
+                <div id='comments'>
+                    <div>
+                        <label for='text_area'>Would you like to tell us more?</label>
+                    </div>
+                    <div>
+                        <textarea id='text_area' name='text_area'></textarea>
+                    </div>
+                </div>
+                <div class='submit-button'>
+                    <button id='submit' type='submit'>Submit</button>
+                </div>
+            </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </div>
+    </body>
+</html>
